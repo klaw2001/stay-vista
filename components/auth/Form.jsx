@@ -4,6 +4,8 @@ import Link from "next/link";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { useParams } from "next/navigation";
+import { signIn } from "next-auth/react";
+
 import axios from "axios";
 
 const Form = ({ path }) => {
@@ -12,8 +14,20 @@ const Form = ({ path }) => {
   const [password, setPassword] = useState("");
 
   const handleClick = async (e) => {
-    e.preventDefault()
-    const res = await axios.post("/api/register", { name, email, password });
+    e.preventDefault();
+    if (path === "register") {
+      const res = await axios.post("/api/register", { name, email, password });
+    }
+
+    if (path === "login") {
+      const res = await signIn("credentials", {
+        email,
+        password,
+        redirect: false,
+      });
+
+      console.log(res);
+    }
   };
   return (
     <form action="">
@@ -72,7 +86,10 @@ const Form = ({ path }) => {
           </Link>
         </div>
       </div>
-      <button className="global-btn text-white bg-dark-blue rounded w-full mt-4 text-xl font-bold" onClick={handleClick}>
+      <button
+        className="global-btn text-white bg-dark-blue rounded w-full mt-4 text-xl font-bold"
+        onClick={handleClick}
+      >
         Register
       </button>
       <div className="sb-2 py-4 text-center">or continue with</div>

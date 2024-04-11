@@ -14,7 +14,7 @@ const RegisterPage = () => {
     <div className="login-wrapper bg py-4" style={{ height: "100vh" }}>
       <div className="container">
         <div className="login-wrap flex justify-center md:flex-row flex-col">
-          <div className="login-nav-box md:w-1/2 md:p-10">
+          <div className="login-nav-box md:w-1/2 md:p-10 order-1">
             <nav className="flex justify-between items-center w-full">
               <Image src={logo} alt="" width={105} height={50} />
               <div className="lang">
@@ -121,7 +121,7 @@ const RegisterPage = () => {
               <Form path={path} />
             </div>
           </div>
-          <div className="aligned-box md:w-1/2">
+          <div className="aligned-box md:w-1/2 mb-4 md:mb-0">
             {/* <h1>Hello</h1> */}
             <div className="text-box px-8 pb-4 pt-16 h-full flex flex-col justify-end text-white">
               <h1 className="text-white leading-tight">
