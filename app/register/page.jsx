@@ -8,11 +8,10 @@ import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import Form from "@/components/auth/Form";
 
-const Login = () => {
-  const path = "login"
-
+const RegisterPage = () => {
+  const path = "register";
   return (
-    <div className="login-wrapper bg py-4" style={{height:"100vh"}}>
+    <div className="login-wrapper bg py-4" style={{ height: "100vh" }}>
       <div className="container">
         <div className="login-wrap flex justify-center md:flex-row flex-col">
           <div className="login-nav-box md:w-1/2 md:p-10">
@@ -41,7 +40,7 @@ const Login = () => {
               <button className="w-full">
                 <Link
                   href="/login"
-                  className="global-btn text-white bg-dark-blue rounded font-bold text-2xl w-full block"
+                  className="global-btn text-dark-grey  rounded font-bold text-2xl w-full block "
                 >
                   Sign In
                 </Link>
@@ -49,16 +48,16 @@ const Login = () => {
               <button className="w-full">
                 <Link
                   href="/register"
-                  className="global-btn text-dark-grey  rounded font-bold text-2xl w-full block"
+                  className="global-btn text-white bg-dark-blue rounded font-bold text-2xl w-full block"
                 >
                   Sign Up
                 </Link>
               </button>
             </div>
             <div className="login-text my-4 text-dark">
-              <h3 className="text-dark">Welcome Back!</h3>
+              <h3 className="text-dark">Join Now !</h3>
               <p className="p2">
-                Sign in now to explore a world of curated information tailored
+                Sign up now to explore a world of curated information tailored
                 to your interests!
               </p>
             </div>
@@ -106,7 +105,7 @@ const Login = () => {
                   </div>
                 </div>
                 <button className="global-btn text-white bg-dark-blue rounded w-full mt-4 text-xl font-bold">
-                  Sign In
+                  Register
                 </button>
                 <div className="sb-2 py-4 text-center">or continue with</div>
                 <div className="auth-btn flex gap-2 items-center">
@@ -119,16 +118,21 @@ const Login = () => {
                   </button>
                 </div>
               </form> */}
-              <Form path={path}/>
+              <Form path={path} />
             </div>
           </div>
           <div className="aligned-box md:w-1/2">
             {/* <h1>Hello</h1> */}
             <div className="text-box px-8 pb-4 pt-16 h-full flex flex-col justify-end text-white">
-              <h1 className="text-white leading-tight">Your Comfort, Your Way - Log In Now!</h1>
+              <h1 className="text-white leading-tight">
+                Your Comfort, Your Way - SignUp Now!
+              </h1>
               <div className="align-box items-center gap-3 flex my-3">
                 <div className="aside-p px-6"></div>
-              <p className="p2 mt-2 relative">Access your account to view upcoming stays, modify bookings, and enjoy a hassle-free experience.</p>
+                <p className="p2 mt-2 relative">
+                  Access your account to view upcoming stays, modify bookings,
+                  and enjoy a hassle-free experience.
+                </p>
               </div>
             </div>
           </div>
@@ -138,4 +142,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default RegisterPage;
