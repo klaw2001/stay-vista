@@ -26,7 +26,6 @@ const Form = ({ path }) => {
         redirect: false,
       });
 
-      console.log(res);
     }
   };
   return (
