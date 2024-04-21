@@ -18,8 +18,8 @@ export default function Header() {
   return (
     <>
       {/* // <!-- navbar goes here --> */}
-      <nav class="">
-        <div class="max-w-6xl mx-auto px-4">
+      <header class="fixed top-0 left-0 right-0 ">
+        <div class="container">
           <div class="flex justify-between">
             <div class="flex space-x-4">
               {/* <!-- logo --> */}
@@ -77,7 +77,7 @@ export default function Header() {
        <div className={`mobile-menu ${isMobileMenuOpen ? '' : 'hidden'} md:hidden`}>
         <NavItemsList mobileMenu={isMobileMenuOpen}/>
         </div>
-      </nav>
+      </header>
 
       {/* // <!-- content goes here --> */}
     </>

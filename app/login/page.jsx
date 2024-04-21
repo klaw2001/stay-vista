@@ -10,16 +10,16 @@ import Form from "@/components/auth/Form";
 import LanguageBox from "@/components/LanguageBox";
 
 const Login = () => {
-  const path = "login"
+  const path = "login";
 
   return (
-    <div className="login-wrapper bg py-4" style={{height:"100vh"}}>
+    <div className="login-wrapper bg py-4" style={{ height: "100vh" }}>
       <div className="container">
         <div className="login-wrap flex justify-center md:flex-row flex-col">
           <div className="login-nav-box md:w-1/2 md:p-10 order-1 md:order-2">
             <nav className="flex justify-between items-center w-full">
               <Image src={logo} alt="" width={105} height={50} />
-              <LanguageBox/>
+              <LanguageBox />
             </nav>
             <div className="buttons-box my-6 flex items-center gap-2 w-full">
               <button className="w-full">
@@ -103,16 +103,21 @@ const Login = () => {
                   </button>
                 </div>
               </form> */}
-              <Form path={path}/>
+              <Form path={path} />
             </div>
           </div>
           <div className="aligned-box md:w-1/2 mb-4 md:mb-0">
             {/* <h1>Hello</h1> */}
             <div className="text-box px-8 pb-4 pt-16 h-full flex flex-col justify-end text-white">
-              <h1 className="text-white leading-tight">Your Comfort, Your Way - Log In Now!</h1>
+              <h1 className="text-white leading-tight">
+                Your Comfort, Your Way - Log In Now!
+              </h1>
               <div className="align-box items-center gap-3 flex my-3">
                 <div className="aside-p px-6"></div>
-              <p className="p2 mt-2 relative">Access your account to view upcoming stays, modify bookings, and enjoy a hassle-free experience.</p>
+                <p className="p2 mt-2 relative">
+                  Access your account to view upcoming stays, modify bookings,
+                  and enjoy a hassle-free experience.
+                </p>
               </div>
             </div>
           </div>

@@ -5,10 +5,10 @@ const LanguageBox = () => {
   return (
     <div className="lang">
     <div className="box flex items-center gap-1">
-      <CiGlobe className="text-xl" />
-      <h6 className="">EN</h6>
+      <CiGlobe className="text-xl text-white" />
+      <h6 className="text-white">EN</h6>
       <svg
-        className="-mr-1 h-5 w-5 text-gray-400"
+        className="-mr-1 h-5 w-5 text-white"
         viewBox="0 0 20 20"
         fill="currentColor"
         aria-hidden="true"

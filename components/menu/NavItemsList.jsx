@@ -5,6 +5,8 @@ import { navLinks } from "@/utils/navLinks";
 const NavItemsList = ({ items, mobileMenu }) => {
   return (
     <>
+    <nav>
+
       {navLinks.map((item, index) => (
         <Link
           key={index}
@@ -24,6 +26,7 @@ const NavItemsList = ({ items, mobileMenu }) => {
           Book Now
         </Link>
       )}
+    </nav>
     </>
   );
 };
